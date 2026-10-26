@@ -1,21 +1,22 @@
 {
   "name": "L7 Lab",
-  "version": "0.1.3",
-  "versionCode": 4,
+  "version": "0.1.4",
+  "versionCode": 5,
   "package": "com.relix.l7lab",
   "minAndroid": "9",
-  "file": "L7Lab-0.1.3-debug.apk",
-  "bytes": 646578,
-  "sha256": "7d4aad5d679cdc10e9941cea5da904ed65f6e3c5d0a8d8cc94ec2a2f6ee2296a",
+  "file": "L7Lab-0.1.4-debug.apk",
+  "bytes": 735918,
+  "sha256": "916bc6b3c169c3113dd29c5871be274e6c527f5d2b232e248db3c5227618611b",
   "buildType": "debug",
-  "stockLixiang741WidgetIntegration": false,
+  "stockLixiang741WidgetIntegration": true,
   "font": "Bundled Noto Sans (SIL OFL 1.1)",
   "changes": [
-    "Native sidebar 1.10.8 card and explicit add/remove buttons",
-    "Cross-process demo counter shared with the native card",
-    "Original 26-method interface and add/remove Binder protocol verified locally"
+    "Read-only HUD display and vendor component diagnostics with local ZIP export",
+    "Home card visibility and counter taps confirmed by owner on firmware 7.4.1",
+    "No custom drawing on HUD in this build"
   ],
   "exportCopiesPrivateAppData": false,
-  "stockSidebarNativeAdapter": "experimental-1.10.8",
-  "vehicleIntegrationVerified": false
+  "stockSidebarNativeAdapter": "1.10.8; home card verified by owner",
+  "vehicleIntegrationVerified": true,
+  "customHudOutputImplemented": false
 }

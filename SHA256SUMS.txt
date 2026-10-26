@@ -2,3 +2,4 @@
 15f11f79ad78f2dea43ae852c8b4b490b60e59fe2de6a2aa3b9c4be959293ca9  L7Lab-0.1.1-debug.apk
 23ff2ac1a2b4e93a2afafcaff384bbd890a522dc3d162a2ce5fe59bdc8deba5c  L7Lab-0.1.2-debug.apk
 7d4aad5d679cdc10e9941cea5da904ed65f6e3c5d0a8d8cc94ec2a2f6ee2296a  L7Lab-0.1.3-debug.apk
+916bc6b3c169c3113dd29c5871be274e6c527f5d2b232e248db3c5227618611b  L7Lab-0.1.4-debug.apk
