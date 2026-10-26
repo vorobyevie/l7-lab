@@ -1,0 +1,12 @@
+{
+  "name": "L7 Lab",
+  "version": "0.1.0",
+  "versionCode": 1,
+  "package": "com.relix.l7lab",
+  "minAndroid": "9",
+  "file": "L7Lab-0.1.0-debug.apk",
+  "bytes": 35251,
+  "sha256": "85112003214ee6053c674117ae6b6f02e99723cae9f6d90cab9d3f79326748c0",
+  "buildType": "debug",
+  "stockLixiang741WidgetIntegration": false
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#101616">
+  <title>L7 Lab — скачать приложение</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #101616; color: #f1f7f3; font-family: Arial, sans-serif; line-height: 1.5; }
+    main { max-width: 940px; margin: 0 auto; padding: 56px 28px; }
+    .brand { color: #a5edd8; letter-spacing: .16em; font-size: 18px; }
+    h1 { font-size: clamp(36px, 5vw, 60px); line-height: 1.15; margin: 30px 0 16px; }
+    .lead { color: #b2c8be; font-size: 23px; max-width: 760px; }
+    .card { margin: 34px 0; padding: 30px; background: #192725; border: 1px solid #334b45; border-radius: 24px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 22px; }
+    .meta span { border: 1px solid #455d53; border-radius: 30px; padding: 7px 16px; font-size: 17px; }
+    .download { display: block; padding: 22px; color: #12231d; background: #a5edd8; border-radius: 16px; text-align: center; text-decoration: none; font-size: 27px; font-weight: bold; }
+    .download:hover, .download:focus { background: #c5ffe9; outline: 3px solid #779e8e; outline-offset: 4px; }
+    .hint { color: #b2c8be; font-size: 17px; margin-bottom: 0; }
+    h2 { font-size: 26px; margin-top: 34px; }
+    ol { padding-left: 28px; font-size: 21px; }
+    li { padding: 8px 0; }
+    .notice { border-left: 3px solid #a5edd8; padding-left: 22px; color: #c1d3ca; font-size: 19px; }
+    details { margin-top: 34px; color: #9fb4aa; }
+    summary { cursor: pointer; font-size: 17px; padding: 12px 0; }
+    code { display: block; word-break: break-all; font-size: 14px; }
+    footer { margin-top: 40px; color: #8da69a; font-size: 15px; }
+    a { color: #a5edd8; }
+    @media (max-width: 540px) { main { padding: 32px 18px; } .card { padding: 22px; } .lead { font-size: 20px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">RELIX / L7 LAB</div>
+    <h1>Тестовое приложение<br>для центрального экрана</h1>
+    <p class="lead">Скачайте APK прямо в браузере автомобиля. Внутри — интерактивная карточка, счётчик нажатий и диагностика экрана.</p>
+    <section class="card" aria-label="Скачать L7 Lab">
+      <div class="meta"><span>Версия 0.1.0</span><span>Android 9+</span><span>35 КБ</span><span>Тестовая сборка</span></div>
+      <a class="download" href="L7Lab-0.1.0-debug.apk" download="L7Lab-0.1.0-debug.apk" type="application/vnd.android.package-archive">Скачать L7 Lab ↓</a>
+      <p class="hint">Без входа в аккаунт. Сборка подписана тестовым ключом разработчика.</p>
+    </section>
+    <h2>Как установить</h2>
+    <ol><li>Нажмите «Скачать L7 Lab».</li><li>Откройте APK в загрузках браузера и установите приложение, если система разрешает установку.</li><li>Запустите <strong>L7 Lab</strong> в списке приложений.</li></ol>
+    <p class="notice">Карточка проверена в эмуляторе. Подключение к штатному главному экрану Lixiang 7.4.1 в этой сборке ещё не реализовано. Само приложение можно использовать для проверки установки и отображения интерфейса.</p>
+    <details><summary>Проверка файла</summary><p>SHA-256:</p><code>85112003214ee6053c674117ae6b6f02e99723cae9f6d90cab9d3f79326748c0</code><p><a href="SHA256SUMS.txt">Скачать контрольную сумму</a> · <a href="version.json">Информация о версии</a></p></details>
+    <footer>26 октября 2026 · Приложение работает локально, без доступа к интернету и функциям автомобиля.</footer>
+  </main>
+</body>
+</html>
