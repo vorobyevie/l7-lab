@@ -1,22 +1,23 @@
 {
   "name": "L7 Lab",
-  "version": "0.1.4",
-  "versionCode": 5,
+  "version": "0.1.5",
+  "versionCode": 6,
   "package": "com.relix.l7lab",
   "minAndroid": "9",
-  "file": "L7Lab-0.1.4-debug.apk",
-  "bytes": 735918,
-  "sha256": "916bc6b3c169c3113dd29c5871be274e6c527f5d2b232e248db3c5227618611b",
+  "file": "L7Lab-0.1.5-debug.apk",
+  "bytes": 673134,
+  "sha256": "9e9d391040aeb2d8d02f4be00626d4faaeaf1c27aaebcc92ef8c94dbc90bed6f",
   "buildType": "debug",
   "stockLixiang741WidgetIntegration": true,
   "font": "Bundled Noto Sans (SIL OFL 1.1)",
   "changes": [
-    "Read-only HUD display and vendor component diagnostics with local ZIP export",
-    "Home card visibility and counter taps confirmed by owner on firmware 7.4.1",
-    "No custom drawing on HUD in this build"
+    "Explicit 10-second transparent counter overlay test on the unique available 800x480/160dpi HUD candidate",
+    "Requires normal Draw over other apps permission; no vehicle-service calls",
+    "Counter updates, timeout, manual stop and display removal tested on emulator secondary display"
   ],
   "exportCopiesPrivateAppData": false,
   "stockSidebarNativeAdapter": "1.10.8; home card verified by owner",
   "vehicleIntegrationVerified": true,
-  "customHudOutputImplemented": false
+  "customHudOutputImplemented": "experimental 10-second overlay test",
+  "vehicleOpticalHudOutputVerified": false
 }
