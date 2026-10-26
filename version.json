@@ -1,23 +1,26 @@
 {
   "name": "L7 Lab",
-  "version": "0.1.5",
-  "versionCode": 6,
+  "version": "0.1.6",
+  "versionCode": 7,
   "package": "com.relix.l7lab",
   "minAndroid": "9",
-  "file": "L7Lab-0.1.5-debug.apk",
-  "bytes": 673134,
-  "sha256": "9e9d391040aeb2d8d02f4be00626d4faaeaf1c27aaebcc92ef8c94dbc90bed6f",
+  "file": "L7Lab-0.1.6-debug.apk",
+  "bytes": 685810,
+  "sha256": "9917dcdb516828888cb5792646e4db4233bb91cd89d9bb582605fa98bd267623",
   "buildType": "debug",
   "stockLixiang741WidgetIntegration": true,
   "font": "Bundled Noto Sans (SIL OFL 1.1)",
   "changes": [
-    "Explicit 10-second transparent counter overlay test on the unique available 800x480/160dpi HUD candidate",
-    "Requires normal Draw over other apps permission; no vehicle-service calls",
-    "Counter updates, timeout, manual stop and display removal tested on emulator secondary display"
+    "Discover installed LiDashboard by label/package and select it for export",
+    "ZIP contains only selected installed base/split APKs plus static package metadata and SHA-256",
+    "No live vehicle data collection or private app data copying"
   ],
   "exportCopiesPrivateAppData": false,
   "stockSidebarNativeAdapter": "1.10.8; home card verified by owner",
   "vehicleIntegrationVerified": true,
   "customHudOutputImplemented": "experimental 10-second overlay test",
-  "vehicleOpticalHudOutputVerified": false
+  "vehicleOpticalHudOutputVerified": true,
+  "vehicleOpticalHudVerifiedOnVersion": "0.1.5",
+  "liDashboardExportImplemented": true,
+  "vehicleLiDashboardExportVerified": false
 }
