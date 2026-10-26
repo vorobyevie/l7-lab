@@ -1,19 +1,21 @@
 {
   "name": "L7 Lab",
-  "version": "0.1.2",
-  "versionCode": 3,
+  "version": "0.1.3",
+  "versionCode": 4,
   "package": "com.relix.l7lab",
   "minAndroid": "9",
-  "file": "L7Lab-0.1.2-debug.apk",
-  "bytes": 623906,
-  "sha256": "23ff2ac1a2b4e93a2afafcaff384bbd890a522dc3d162a2ce5fe59bdc8deba5c",
+  "file": "L7Lab-0.1.3-debug.apk",
+  "bytes": 646578,
+  "sha256": "7d4aad5d679cdc10e9941cea5da904ed65f6e3c5d0a8d8cc94ec2a2f6ee2296a",
   "buildType": "debug",
   "stockLixiang741WidgetIntegration": false,
   "font": "Bundled Noto Sans (SIL OFL 1.1)",
   "changes": [
-    "Local APK export of launcher and CarSupport from Diagnostics to Download/L7Lab",
-    "CMA Store and CarSupport installed versions in diagnostics",
-    "Bundled Noto Sans and explicit text rendering preserved"
+    "Native sidebar 1.10.8 card and explicit add/remove buttons",
+    "Cross-process demo counter shared with the native card",
+    "Original 26-method interface and add/remove Binder protocol verified locally"
   ],
-  "exportCopiesPrivateAppData": false
+  "exportCopiesPrivateAppData": false,
+  "stockSidebarNativeAdapter": "experimental-1.10.8",
+  "vehicleIntegrationVerified": false
 }
