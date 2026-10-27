@@ -1,20 +1,20 @@
 {
   "name": "L7 Lab",
-  "version": "0.1.10",
-  "versionCode": 11,
+  "version": "0.1.11",
+  "versionCode": 12,
   "package": "com.relix.l7lab",
   "minAndroid": "9",
-  "file": "L7Lab-0.1.10-debug.apk",
-  "bytes": 890978,
-  "sha256": "bc4fa0eb3c8b1012d34f83c8b8038d5d56e07c021e3112cd2acaa742868528d4",
+  "file": "L7Lab-0.1.11-debug.apk",
+  "bytes": 905814,
+  "sha256": "d35901d01acfc3e786bfb66c7d7c9cff50ea191f66bc4934632cf3489a46851d",
   "buildType": "debug",
   "stockLixiang741WidgetIntegration": true,
   "font": "Bundled Noto Sans (SIL OFL 1.1)",
   "changes": [
-    "Own read client for exact CarSupport request_property/get_property contract; seven whitelisted IDs",
-    "Original provider tested in separate UID using synthetic cache, without CMA Application or native loader execution",
-    "No direct Car/LASS requests; stale and malformed data hidden; 30-second own polling session and report-only export",
-    "CarSupport has no unrequest API: requested IDs remain until its process restarts"
+    "Add separate read request/reply broadcasts used by CarSupport 1.78; keep provider cache reads",
+    "Separate cache and broadcast diagnostics, verify seven registered requests and six built-in cache entries",
+    "Bounded 30-second receiver/session; optional installed Parcelable class only, no vehicle permissions or setters",
+    "Local IPC test with empty original-provider cache and synthetic broadcast replies; vehicle producer still unverified"
   ],
   "exportCopiesPrivateAppData": false,
   "stockSidebarNativeAdapter": "1.10.8; home card verified by owner",
@@ -30,9 +30,11 @@
   "telemetryObserverTest": false,
   "telemetryServiceArchiveImplemented": true,
   "vehicleLassBinderQueriesVerified": true,
-  "telemetryRoute": "CarSupport 1.78 exported properties provider; own UID",
+  "telemetryRoute": "CarSupport provider + REQUEST_CAR_PROPERTY/CAR_PROPERTY_CHANGED read broadcasts; own UID",
   "telemetryArchiveIncludesProgramApks": false,
   "windowWriteAttempted": false,
   "carSupportOriginalProviderContractVerifiedLocally": true,
-  "carSupportRequestsPersistUntilProcessRestart": true
+  "carSupportRequestsPersistUntilProcessRestart": true,
+  "carSupportLegacyReadProtocolImplemented": true,
+  "broadcastSenderAuthenticated": false
 }
