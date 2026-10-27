@@ -1,19 +1,19 @@
 {
   "name": "L7 Lab",
-  "version": "0.1.8",
-  "versionCode": 9,
+  "version": "0.1.9",
+  "versionCode": 10,
   "package": "com.relix.l7lab",
   "minAndroid": "9",
-  "file": "L7Lab-0.1.8-debug.apk",
-  "bytes": 846970,
-  "sha256": "b4dc04e9a5b794b634646571b19c918991f20766fd7e0764a1939852214eccd7",
+  "file": "L7Lab-0.1.9-debug.apk",
+  "bytes": 873126,
+  "sha256": "ccf697b5b3b8e2de761ae4504e52e64b066250714cdf281a4ac59f7a1fd30ca6",
   "buildType": "debug",
   "stockLixiang741WidgetIntegration": true,
   "font": "Bundled Noto Sans (SIL OFL 1.1)",
   "changes": [
-    "Subscribe to seven OEM LASS signal observers during the explicit 30-second read test; remove observers at stop",
-    "Decode bounded inline NULL/string responses and distinguish them from numeric values",
-    "Export own last read report plus installed LASS/Android Car service APKs for private analysis"
+    "Direct Android Car read test for seven whitelisted signals instead of unsupported LASS mapping",
+    "Optional installed Android Car API; permission inventory and exact denied/missing API errors in own report",
+    "30-second session and small report-only archive; no vehicle setters or window commands"
   ],
   "exportCopiesPrivateAppData": false,
   "stockSidebarNativeAdapter": "1.10.8; home card verified by owner",
@@ -26,7 +26,10 @@
   "vehicleTelemetryAccessVerified": false,
   "telemetryTestSeconds": 30,
   "telemetryReadOnly": true,
-  "telemetryObserverTest": true,
+  "telemetryObserverTest": false,
   "telemetryServiceArchiveImplemented": true,
-  "vehicleLassBinderQueriesVerified": true
+  "vehicleLassBinderQueriesVerified": true,
+  "telemetryRoute": "Android Car property manager under own UID",
+  "telemetryArchiveIncludesProgramApks": false,
+  "windowWriteAttempted": false
 }
