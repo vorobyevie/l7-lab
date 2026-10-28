@@ -1,21 +1,20 @@
 {
   "name": "L7 Lab",
-  "version": "0.6.0",
-  "versionCode": 24,
+  "version": "0.6.1",
+  "versionCode": 25,
   "package": "com.relix.l7lab",
   "minAndroid": "9",
-  "file": "L7Lab-0.6.0-debug.apk",
-  "bytes": 6909711,
-  "sha256": "0cf8ae022339397a098db49659dff394f127bbee3055f7898b4b82dd3c7a7d1a",
+  "file": "L7Lab-0.6.1-debug.apk",
+  "bytes": 6781723,
+  "sha256": "f3ab6bb5ec101c19aa624efcf6d7f91cc589898a50b1dd7645ce42d6e89e1a61",
   "buildType": "debug",
   "stockLixiang741WidgetIntegration": true,
   "font": "Bundled Noto Sans, Barlow and Russo One (SIL OFL 1.1)",
   "changes": [
-    "Matched VehicleStatus WLTC sources replace the nonresponding HU EV source; true zero and stale checks retained",
-    "Separate Diagnostics auto app button: searchable 6923-ID catalog, groups, availability and raw area/type/time details",
-    "Local saved-survey viewer, ZIP import and explicit one-property read; full survey remains stoppable and limited to 7 requests/sec",
-    "Approved Ultra lettering and textured dark/light material plates with live numerals/scale/needle; larger portrait dial",
-    "Detailed transparent SUV artwork and outlined fan, thermometer and heating icons in the tire/climate page"
+    "Russian primary names throughout the 6923-ID diagnostic catalog, with original system name in parentheses",
+    "Full meanings for core telemetry, named wheel positions, range cycles and common signal families",
+    "Russian/system/hex-ID search; details distinguish nomenclature inferred from names and unresolved OEM acronyms",
+    "Processor SOC distinguished from battery SOC; accessory ACC distinguished from adaptive cruise; IDs, raw values and read behavior unchanged"
   ],
   "exportCopiesPrivateAppData": false,
   "stockSidebarNativeAdapter": "1.10.8; home card verified by owner",
@@ -144,5 +143,11 @@
   "vehicleSohSourceReplyObserved": true,
   "vehicleRangeSourceReplyObserved": true,
   "vehicleDiagnostics060Verified": false,
-  "vehicleReferenceUi060Verified": false
+  "vehicleReferenceUi060Verified": false,
+  "diagnosticRussianNames": true,
+  "diagnosticRussianNameCount": 6923,
+  "diagnosticSystemNamesInParentheses": true,
+  "diagnosticSearchesRussianAndSystemNames": true,
+  "diagnosticUncertainMeaningsExplicit": true,
+  "vehicleRussianLabels061Verified": false
 }
