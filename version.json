@@ -1,20 +1,21 @@
 {
   "name": "L7 Lab",
-  "version": "0.3.3",
-  "versionCode": 20,
+  "version": "0.4.0",
+  "versionCode": 21,
   "package": "com.relix.l7lab",
   "minAndroid": "9",
-  "file": "L7Lab-0.3.3-debug.apk",
-  "bytes": 807946,
-  "sha256": "4381636b47acda8024bb1a5cfda6140b0f948f596093c42c261f7f9c21596220",
+  "file": "L7Lab-0.4.0-debug.apk",
+  "bytes": 1200081,
+  "sha256": "ccfab08ca938b4c140f58263c66eed3ddac97b7b566b44afaed2de308867a2fa",
   "buildType": "debug",
   "stockLixiang741WidgetIntegration": true,
   "font": "Bundled Noto Sans (SIL OFL 1.1)",
   "changes": [
-    "Continuous single rounded card shared by the tabs and body; remove extra inner corner gaps in both themes",
-    "Header: WLTC total range / Charge SOC percent / Fuel range / live or snapshot indicator",
-    "Charge uses the existing SOC reading; missing or stale values remain unavailable; true zero retained",
-    "Both card pages, size-aware rendering, current history, 29 sources and seven read requests per second preserved"
+    "Optional finite survey of all 6923 known OEM and LiDashboard property IDs",
+    "One read per ID at <=7 per second; dashboard paused during the survey; no provider request registrations or controls",
+    "Mixed raw types, areas, status, latency, decode errors and separate cache observations",
+    "Foreground progress and notification stop; private journal survives interruption; partial export retains unrequested IDs",
+    "Explicit Downloads archive containing JSON and CSV reports; no reply means unknown availability"
   ],
   "exportCopiesPrivateAppData": false,
   "stockSidebarNativeAdapter": "1.10.8; home card verified by owner",
@@ -99,5 +100,16 @@
   "headerChargeSource": "SOC 0x616007BA",
   "headerChargeZeroAndStaleVerifiedLocally": true,
   "cardUsesSingleOuterRounding": true,
-  "vehicleHeader033Verified": false
+  "vehicleHeader033Verified": false,
+  "parameterSurveyImplemented": true,
+  "parameterSurveyCatalogCount": 6923,
+  "parameterSurveyKnownIdsOnly": true,
+  "parameterSurveyHardwareSupportedList": false,
+  "parameterSurveyEstimatedMinutes": 17,
+  "parameterSurveyMaxReadsPerSecond": 7,
+  "parameterSurveyRepeatsEachId": false,
+  "parameterSurveyNotificationStop": true,
+  "parameterSurveyPartialExport": true,
+  "parameterSurveyVehicleVerified": false,
+  "parameterSurveySharesDashboardReadBudget": true
 }
