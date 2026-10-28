@@ -1,20 +1,20 @@
 {
   "name": "L7 Lab",
-  "version": "0.2.0",
-  "versionCode": 14,
+  "version": "0.2.1",
+  "versionCode": 15,
   "package": "com.relix.l7lab",
   "minAndroid": "9",
-  "file": "L7Lab-0.2.0-debug.apk",
-  "bytes": 968197,
-  "sha256": "a63c3d48b8a28db42bbfe91569e83471a2956ff6c2185e831a270e261dcd5d73",
+  "file": "L7Lab-0.2.1-debug.apk",
+  "bytes": 784309,
+  "sha256": "030bf4e099f7cba674e37ad7e096f87c6cf01872b7ce1e804ee4e16829237150",
   "buildType": "debug",
   "stockLixiang741WidgetIntegration": true,
   "font": "Bundled Noto Sans (SIL OFL 1.1)",
   "changes": [
-    "New light powertrain dashboard matching the reference: shared vector UI for the app and native Li Auto card",
-    "26 explicitly whitelisted read signals; missing or stale data shown as dashes; tire pressure converted from kPa to bar pending vehicle confirmation",
-    "User-started foreground reading continues on the home screen, with stop controls and no persistent cache registrations",
-    "Seven hardware read broadcasts per second maximum, round-robin polling, live report export, original native ABI and service lifecycle tested on emulator"
+    "Responsive section geometry fills the entire allocated native-card and application window without centering a fixed canvas",
+    "Uniform font and illustration scaling; smaller header, adaptive body sections, evenly distributed climate rows",
+    "Rendered coverage verified in seven window/card aspect ratios, including 950x1360 and 1906x1250",
+    "Telemetry channels, foreground lifecycle and seven read requests per second limit unchanged"
   ],
   "exportCopiesPrivateAppData": false,
   "stockSidebarNativeAdapter": "1.10.8; home card verified by owner",
@@ -53,5 +53,11 @@
   "vehicleCoreSevenSignalsVerifiedOnVersion": "0.1.12",
   "nativeDashboardAbiTestedOnOriginalSidebar": true,
   "ordinaryAndroidWidgetIsSnapshot": true,
-  "vehicleTelemetryDisplayVerifiedOnVersion": "0.1.12"
+  "vehicleTelemetryDisplayVerifiedOnVersion": "0.1.12",
+  "adaptiveLayout": true,
+  "adaptiveLayoutAspectRatiosTested": 7,
+  "uniformFontScaling": true,
+  "vehicleDashboard020Verified": true,
+  "vehicleAdditional19DeliveryConfirmedOnPhotos": true,
+  "vehicleLayout021Verified": false
 }
