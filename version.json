@@ -1,21 +1,20 @@
 {
   "name": "L7 Lab",
-  "version": "0.3.2",
-  "versionCode": 19,
+  "version": "0.3.3",
+  "versionCode": 20,
   "package": "com.relix.l7lab",
   "minAndroid": "9",
-  "file": "L7Lab-0.3.2-debug.apk",
-  "bytes": 1019677,
-  "sha256": "ab49e21f3e86002e84e7a860d0bb6587c5a271090ba52b1fb4d05ff45e753f0b",
+  "file": "L7Lab-0.3.3-debug.apk",
+  "bytes": 807946,
+  "sha256": "4381636b47acda8024bb1a5cfda6140b0f948f596093c42c261f7f9c21596220",
   "buildType": "debug",
   "stockLixiang741WidgetIntegration": true,
   "font": "Bundled Noto Sans (SIL OFL 1.1)",
   "changes": [
-    "Direct home-card tabs: Instruments / Tires and climate in both native Li Auto view and Android AppWidget",
-    "Native child buttons use the existing trusted provider, Android widget tabs use explicit immutable broadcast PendingIntents; selecting a page never opens the app",
-    "Persist selected page in existing display preferences, synchronize app and all cards; active tab is highlighted",
-    "Account for the tab strip when rendering each widget bitmap so previous full-area sizing and uniform font scale remain intact",
-    "Telemetry session, current history, 29 signal sources and seven hardware read requests per second budget unchanged"
+    "Continuous single rounded card shared by the tabs and body; remove extra inner corner gaps in both themes",
+    "Header: WLTC total range / Charge SOC percent / Fuel range / live or snapshot indicator",
+    "Charge uses the existing SOC reading; missing or stale values remain unavailable; true zero retained",
+    "Both card pages, size-aware rendering, current history, 29 sources and seven read requests per second preserved"
   ],
   "exportCopiesPrivateAppData": false,
   "stockSidebarNativeAdapter": "1.10.8; home card verified by owner",
@@ -95,5 +94,10 @@
   "homePageSelectionSharedWithApp": true,
   "homeTabSelectionOpensActivity": false,
   "nativeHomeTabsVerifiedOnOriginalAbiEmulator": true,
-  "vehicleHomeTabs032Verified": false
+  "vehicleHomeTabs032Verified": false,
+  "headerChargeLabel": "Заряд",
+  "headerChargeSource": "SOC 0x616007BA",
+  "headerChargeZeroAndStaleVerifiedLocally": true,
+  "cardUsesSingleOuterRounding": true,
+  "vehicleHeader033Verified": false
 }
