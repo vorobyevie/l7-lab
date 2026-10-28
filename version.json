@@ -1,22 +1,21 @@
 {
   "name": "L7 Lab",
-  "version": "0.3.1",
-  "versionCode": 18,
+  "version": "0.3.2",
+  "versionCode": 19,
   "package": "com.relix.l7lab",
   "minAndroid": "9",
-  "file": "L7Lab-0.3.1-debug.apk",
-  "bytes": 799213,
-  "sha256": "d9bda02ed8525df3db3878a7f609d589ed5521790f53c04cb78da1d54b99a54f",
+  "file": "L7Lab-0.3.2-debug.apk",
+  "bytes": 1019677,
+  "sha256": "ab49e21f3e86002e84e7a860d0bb6587c5a271090ba52b1fb4d05ff45e753f0b",
   "buildType": "debug",
   "stockLixiang741WidgetIntegration": true,
   "font": "Bundled Noto Sans (SIL OFL 1.1)",
   "changes": [
-    "Display only SOH in application, native card and snapshot; original LBMS_SOH source remains in diagnostic metadata",
-    "Render each Android widget snapshot for its own advertised host sizes instead of a fixed 560x940 bitmap",
-    "Android 12+ exact-size RemoteViews variants, legacy min/max fallback and resize support, with a bounded total raster memory budget",
-    "Remove the independent light frame around dark widget snapshots; preserve uniform font scaling and full instrument visibility",
-    "Local simulator now reports measured content sizes without double subtracting framework padding",
-    "Remove brand text from dashboard, application, diagnostics and local simulator; compact header to one row"
+    "Direct home-card tabs: Instruments / Tires and climate in both native Li Auto view and Android AppWidget",
+    "Native child buttons use the existing trusted provider, Android widget tabs use explicit immutable broadcast PendingIntents; selecting a page never opens the app",
+    "Persist selected page in existing display preferences, synchronize app and all cards; active tab is highlighted",
+    "Account for the tab strip when rendering each widget bitmap so previous full-area sizing and uniform font scale remain intact",
+    "Telemetry session, current history, 29 signal sources and seven hardware read requests per second budget unchanged"
   ],
   "exportCopiesPrivateAppData": false,
   "stockSidebarNativeAdapter": "1.10.8; home card verified by owner",
@@ -86,5 +85,15 @@
   "widgetRasterSizingVerifiedOnEmulator": true,
   "vehicleWidget031Verified": false,
   "dashboardBrandingVisible": false,
-  "compactSingleRowHeader": true
+  "compactSingleRowHeader": true,
+  "homeCardPageButtons": true,
+  "homeCardPages": [
+    "Приборы",
+    "Шины и климат"
+  ],
+  "homePageSelectionPersists": true,
+  "homePageSelectionSharedWithApp": true,
+  "homeTabSelectionOpensActivity": false,
+  "nativeHomeTabsVerifiedOnOriginalAbiEmulator": true,
+  "vehicleHomeTabs032Verified": false
 }
