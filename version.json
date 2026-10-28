@@ -1,20 +1,20 @@
 {
   "name": "L7 Lab",
-  "version": "0.2.1",
-  "versionCode": 15,
+  "version": "0.2.2",
+  "versionCode": 16,
   "package": "com.relix.l7lab",
   "minAndroid": "9",
-  "file": "L7Lab-0.2.1-debug.apk",
-  "bytes": 784309,
-  "sha256": "030bf4e099f7cba674e37ad7e096f87c6cf01872b7ce1e804ee4e16829237150",
+  "file": "L7Lab-0.2.2-debug.apk",
+  "bytes": 784557,
+  "sha256": "daade780f6dd1166de23b238bf3c13f33d7a934e99252ac48fb1c9e72284d852",
   "buildType": "debug",
   "stockLixiang741WidgetIntegration": true,
   "font": "Bundled Noto Sans (SIL OFL 1.1)",
   "changes": [
-    "Responsive section geometry fills the entire allocated native-card and application window without centering a fixed canvas",
-    "Uniform font and illustration scaling; smaller header, adaptive body sections, evenly distributed climate rows",
-    "Rendered coverage verified in seven window/card aspect ratios, including 950x1360 and 1906x1250",
-    "Telemetry channels, foreground lifecycle and seven read requests per second limit unchanged"
+    "Read EV_WLTC_Mileage_HU and Fuel_WLTC_Mileage_HU instead of zero-valued VehicleStatus mileage fields",
+    "Show explicit WLTC range basis in dashboard and native home card; sum only two fresh available values",
+    "Archive retains range basis and OEM field names; unavailable values remain dashes and genuine zero is preserved",
+    "26 signals, unchanged foreground lifecycle and maximum seven read requests per second"
   ],
   "exportCopiesPrivateAppData": false,
   "stockSidebarNativeAdapter": "1.10.8; home card verified by owner",
@@ -59,5 +59,10 @@
   "uniformFontScaling": true,
   "vehicleDashboard020Verified": true,
   "vehicleAdditional19DeliveryConfirmedOnPhotos": true,
-  "vehicleLayout021Verified": false
+  "vehicleLayout021Verified": false,
+  "rangeBasis": "WLTC",
+  "rangeEvProperty": "0x41400904",
+  "rangeFuelProperty": "0x41400911",
+  "rangeTotalDerivedFrom": "EV WLTC + fuel WLTC when both fresh",
+  "vehicleRange022Verified": false
 }
