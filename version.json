@@ -1,20 +1,19 @@
 {
   "name": "L7 Lab",
-  "version": "0.6.1",
-  "versionCode": 25,
+  "version": "0.6.2",
+  "versionCode": 26,
   "package": "com.relix.l7lab",
   "minAndroid": "9",
-  "file": "L7Lab-0.6.1-debug.apk",
-  "bytes": 6781723,
-  "sha256": "f3ab6bb5ec101c19aa624efcf6d7f91cc589898a50b1dd7645ce42d6e89e1a61",
+  "file": "L7Lab-0.6.2-debug.apk",
+  "bytes": 7138359,
+  "sha256": "f7f9e7e8e0b88bd9b500d401542f5d229c4097d28bfbc4acc53a4d3f8eb290f9",
   "buildType": "debug",
   "stockLixiang741WidgetIntegration": true,
   "font": "Bundled Noto Sans, Barlow and Russo One (SIL OFL 1.1)",
   "changes": [
-    "Russian primary names throughout the 6923-ID diagnostic catalog, with original system name in parentheses",
-    "Full meanings for core telemetry, named wheel positions, range cycles and common signal families",
-    "Russian/system/hex-ID search; details distinguish nomenclature inferred from names and unresolved OEM acronyms",
-    "Processor SOC distinguished from battery SOC; accessory ACC distinguished from adaptive cruise; IDs, raw values and read behavior unchanged"
+    "Dedicated SOH comparison screen: 25 known LBMS / traction BMS / backup battery read IDs, finite 60-second foreground session",
+    "Separate local ZIP/CSV timeline preserves measurement timestamps and reply ages; normal dashboard report remains separate",
+    "Primary Li Auto patent describes LBMS in a 12-V battery context; this property remains unverified as traction-battery SOH"
   ],
   "exportCopiesPrivateAppData": false,
   "stockSidebarNativeAdapter": "1.10.8; home card verified by owner",
@@ -149,5 +148,14 @@
   "diagnosticSystemNamesInParentheses": true,
   "diagnosticSearchesRussianAndSystemNames": true,
   "diagnosticUncertainMeaningsExplicit": true,
-  "vehicleRussianLabels061Verified": false
+  "vehicleRussianLabels061Verified": false,
+  "sohCheckSeconds": 60,
+  "sohCheckSignalCount": 25,
+  "sohCheckWritesVehicleProperties": false,
+  "sohCheckStopsOnExit": true,
+  "sohCheckOverwritesDashboardReport": false,
+  "sohCheckSourceTimestampPreserved": true,
+  "sohCheckTractionSohConfirmed": false,
+  "sohCheckVehicleVerified": false,
+  "sohPrimaryResearchSource": "https://patents.google.com/patent/CN116707062A/zh"
 }

@@ -1,1 +1,1 @@
-f3ab6bb5ec101c19aa624efcf6d7f91cc589898a50b1dd7645ce42d6e89e1a61  L7Lab-0.6.1-debug.apk
+f7f9e7e8e0b88bd9b500d401542f5d229c4097d28bfbc4acc53a4d3f8eb290f9  L7Lab-0.6.2-debug.apk
